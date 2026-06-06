@@ -1,7 +1,7 @@
 {
   "name": "Landscape Products",
   "short_name": "Catalog",
-  "start_url": "./catalog.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#2cbf31",
   "theme_color": "#111111",
