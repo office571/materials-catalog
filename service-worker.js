@@ -2,12 +2,12 @@ const CACHE_NAME = "catalog-app-v1";
 
 const FILES_TO_CACHE = [
   "./",
-  "./index.html",
+  "./catalog.html",
   "./main.css",
   "./main.js",
   "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png"
+  "./utilities/favicon.png",
+  "./utilities/favicon.png"
 ];
 
 self.addEventListener("install", event => {
