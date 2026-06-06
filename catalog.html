@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials Catalog</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="utilities/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#111111">
+</head>
+<body>
+    <div id="frame">
+        <aside id="search-menu">
+            <div class="menu-content">
+                <p class="eyebrow">Catalog</p>
+                <ul id="options">
+                    <li><a href="#sod">Sod</a></li>
+                    <li><a href="#decorative-rock">Decorative Rock</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main id="catelog">
+            <section class="hero-panel">
+                <p class="eyebrow">Landscape Materials</p>
+                <h1>Find materials by name, price, size, and travel time.</h1>
+                <p class="hero-copy">Use the filters to find gravel, sod, decorative rock, and other materials near your job site.</p>
+
+                <div class="filters" id="speacial-edit-1">
+                    <label class="filter-field search-field">
+                        <span>Search material</span>
+                        <input id="searchInput" type="search" placeholder="Search: concrete, blue grass, slag...">
+                    </label>
+
+                    <label class="filter-field">
+                        <span>Max price</span>
+                        <select id="priceFilter">
+                            <option value="all">Any price</option>
+                            <option value="25">Under $25</option>
+                            <option value="50">Under $50</option>
+                            <option value="75">Under $75</option>
+                            <option value="100">Under $100</option>
+                            <option value="150">Under $150</option>
+                            <option value="200">Under $200</option>
+                        </select>
+                    </label>
+
+                    <label class="filter-field">
+                        <span>Size</span>
+                        <select id="sizeFilter">
+                            <option value="all">Any size</option>
+                            <option value="3/8">3/8&quot;</option>
+                            <option value="1/2">1/2&quot;</option>
+                            <option value="3/4">3/4&quot;</option>
+                            <option value="1">1&quot;</option>
+                            <option value="1-1/2">1-1/2&quot;</option>
+                            <option value="2">2&quot;</option>
+                            <option value="3">3&quot;</option>
+                            <option value="4">4&quot;</option>
+                            <option value="5">5&quot;</option>
+                            <option value="6">6&quot;</option>
+                            <option value="sq ft">Sq ft</option>
+                        </select>
+                    </label>
+
+                    <label class="filter-field origin-field">
+                        <span>Job site address</span>
+                        <input id="originInput" type="text" placeholder="Example: Salt Lake City, UT">
+                    </label>
+
+                    <label class="filter-field">
+                        <span>Max travel time</span>
+                        <select id="distanceFilter">
+                            <option value="all">Any distance</option>
+                            <option value="5">Within 5 minutes</option>
+                            <option value="10">Within 10 minutes</option>
+                            <option value="15">Within 15 minutes</option>
+                            <option value="20">Within 20 minutes</option>
+                            <option value="30">Within 30 minutes</option>
+                            <option value="45">Within 45 minutes</option>
+                            <option value="60">Within 60 minutes</option>
+                            <option value="90">Within 90 minutes</option>
+                        </select>
+                    </label>
+
+                    <button id="applyDistance" class="distance-button" type="button">Apply distance</button>
+                </div>
+
+                
+
+                <div class="results-bar">
+                    <strong id="resultCount">0 materials found</strong>
+                    <button id="clearFilters" type="button">Clear filters</button>
+                </div>
+            </section>
+
+            <p id="noResults">No materials match your search. Try a different name, price, size, or travel time.</p>
+
+            <h2 id="sod" class="section-title">SOD</h2>
+            <div class="group">
+                <article class="catalog-item" data-name="Kentucky Blue Grass" data-price="44" data-size="sq ft" data-location="40.7608,-111.8910" data-travel-minutes="">
+                    <img src="Images/sod/kentucky blue grass.jpeg" alt="Kentucky Blue Grass">
+                    <div class="item-info">
+                        <h3>Kentucky Blue Grass</h3>
+                        <p class="sizes">Size: sq ft</p>
+                        <p class="supplier">Supplier area: Trementon, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">¢44 / sqft</p>
+                    </div>
+                </article>
+
+                <article class="catalog-item" data-name="Desert Sage Grass" data-price="82" data-size="sq ft" data-location="40.6097,-111.9391" data-travel-minutes="">
+                    <img src="Images/sod/desert-sage.jpg" alt="Desert Sage Grass">
+                    <div class="item-info">
+                        <h3>Desert Sage Grass</h3>
+                        <p class="sizes">Size: sq ft</p>
+                        <p class="supplier">Supplier area: Murray, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">$82 / sqft</p>
+                    </div>
+                </article>
+            </div>
+
+            <h2 class="section-title title" id="decorative-rock">DECORATIVE ROCK</h2>
+            <div class="group">
+                <article class="catalog-item" data-name="Natural Grey" data-price="38" data-size="3/8 1/2 3/4 1 1-1/2 2 3 5 6" data-location="40.5219,-111.9391" data-travel-minutes="">
+                    <img src="Images/rocks/natural grey.png" alt="Natural Grey decorative rock">
+                    <div class="item-info">
+                        <h3>Natural Grey</h3>
+                        <p class="sizes">Sizes: 3/8&quot; | 1/2&quot; | 3/4&quot; | 1&quot; | 1-1/2&quot; | 2&quot; | 3&quot; | 5&quot; | 6&quot;</p>
+                        <p class="supplier">Supplier area: Midvale, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">$38 / ton</p>
+                    </div>
+                </article>
+
+                <article class="catalog-item" data-name="Slag" data-price="31" data-size="1/2 3/4 1 1-1/2 3" data-location="40.6916,-112.0011" data-travel-minutes="">
+                    <img src="Images/rocks/conrock slag.png" alt="Slag decorative rock">
+                    <div class="item-info">
+                        <h3>Slag</h3>
+                        <p class="sizes">Sizes: 1/2&quot; | 3/4&quot; | 1&quot; | 1-1/2&quot; | 3&quot;</p>
+                        <p class="supplier">Supplier area: West Valley City, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">$31 / ton</p>
+                    </div>
+                </article>
+
+                <article class="catalog-item" data-name="Washed Natural" data-price="42" data-size="3/8 1/2 3/4 1 2" data-location="40.8822,-111.8808" data-travel-minutes="">
+                    <img src="Images/rocks/washed natural conrock.png" alt="Washed Natural decorative rock">
+                    <div class="item-info">
+                        <h3>Washed Natural</h3>
+                        <p class="sizes">Sizes: 3/8&quot; | 1/2&quot; | 3/4&quot; | 1&quot; | 2&quot;</p>
+                        <p class="supplier">Supplier area: Bountiful, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">$42 / ton</p>
+                    </div>
+                </article>
+
+                <article class="catalog-item" data-name="Crushed Concrete" data-price="18" data-size="3/4 1 1-1/2 2 3 4 6" data-location="40.2969,-111.6946" data-travel-minutes="">
+                    <img src="Images/rocks/conrock crushed concrete.png" alt="Crushed Concrete">
+                    <div class="item-info">
+                        <h3>Crushed Concrete</h3>
+                        <p class="sizes">Sizes: 3/4&quot; | 1&quot; | 1-1/2&quot; | 2&quot; | 3&quot; | 4&quot; | 6&quot;</p>
+                        <p class="supplier">Supplier area: Orem, UT</p>
+                        <p class="travel-time">Travel time: enter job site</p>
+                        <p class="price">$18 / ton</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxbjGtZN5GFfMSeYAT-4JgoGvD2FHyJj4&callback=initGoogleMaps&loading=async"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./service-worker.js");
+        }
+</script>
+</body>
+</html>
