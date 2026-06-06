@@ -2,7 +2,7 @@ const CACHE_NAME = "catalog-app-v1";
 
 const FILES_TO_CACHE = [
   "./",
-  "./catalog.html",
+  "./index.html",
   "./main.css",
   "./main.js",
   "./manifest.json",
